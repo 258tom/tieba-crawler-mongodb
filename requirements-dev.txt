@@ -1,0 +1,9 @@
+# 开发用依赖（跑测试 / 代码检查时才需要）
+# 安装：.\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
+-r requirements.txt
+
+# 测试框架。当前测试文件也能直接 `python test_xxx.py` 跑，装了 pytest 更顺手
+pytest>=8.0
+
+# 静态检查
+ruff>=0.6

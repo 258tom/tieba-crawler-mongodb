@@ -1,0 +1,9 @@
+# 运行本项目需要的第三方依赖
+# 安装：.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+
+# 贴吧异步爬虫客户端
+aiotieba>=4.7.1
+
+# MongoDB 官方驱动。>=4.9 才有 AsyncMongoClient（异步客户端），不要降级
+# 注意：不要用 motor，它已被官方废弃
+pymongo>=4.9

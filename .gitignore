@@ -1,0 +1,56 @@
+# ============================================================
+#  .gitignore — 保证仓库里只有源码
+#  重点：MongoDB 安装包 754MB，GitHub 单文件上限 100MB，绝对不能提交
+# ============================================================
+
+# ---------- 凭据 / 隐私（最重要，别删）----------
+.env
+.env.*
+!.env.example
+
+# ---------- Python 虚拟环境 ----------
+.venv/
+venv/
+env/
+ENV/
+
+# ---------- Python 缓存 / 构建产物 ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------- 数据库本体 / 安装包（体积巨大）----------
+mongodb-*.zip
+mongodb-*.tgz
+*.msi
+data/
+log/
+*.log
+
+# ---------- 导出的数据文件 ----------
+*.csv
+*.xlsx
+*.json
+!package.json
+!*.example.json
+
+# ---------- IDE / 编辑器 ----------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ---------- 操作系统 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
